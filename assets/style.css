@@ -135,6 +135,9 @@ a:hover { text-decoration: underline; }
 }
 
 .store-btn small { display: block; font-weight: 400; font-size: 11px; opacity: 0.85; }
+/* .store-btn 預設是「即將上架」的半透明樣式；已上架的按鈕是 <a>，恢復全亮、可點 */
+a.store-btn { opacity: 1; cursor: pointer; }
+a.store-btn:hover { text-decoration: none; opacity: 0.88; }
 
 section { padding: 40px 0; }
 
